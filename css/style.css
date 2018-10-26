@@ -3,10 +3,10 @@
 
 @import url('/css/reset.css');
 
-@import url('/css/typography.css');
-@import url('/css/icon-links.css');
-@import url('/css/navigation.css');
-@import url('/css/elements.css');
+@import url('css/typography.css');
+@import url('css/icon-links.css');
+@import url('css/navigation.css');
+@import url('css/elements.css');
 
 
 @media screen and (min-width: 600px) {

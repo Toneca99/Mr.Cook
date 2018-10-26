@@ -1,0 +1,43 @@
+header .appear .social-links {
+    display:flex;
+   
+}
+
+
+header .appear .social-links a{
+    color: rgb(187, 161, 163);
+    text-decoration: none;
+    line-height:1.8;
+    
+    
+}
+
+header .appear .social-links a:hover {
+    color: rgb(226, 196, 199);
+}
+
+header .appear .social {
+    
+    border-radius:0.3rem;
+    padding:0.5rem 1rem;
+}
+
+header .appear .social:not(:last-child){
+    margin-right:1rem;
+}
+header .info .fas{
+    margin-right:0.5rem;
+}
+header .social-links .fas ,
+header .social-links .fab{
+    font-size:20px;
+}
+
+header .fab.fa-facebook-f {
+    padding:0 0.4rem;
+}
+
+header .info p ,
+header .appear p{
+    display:inline-block;
+}

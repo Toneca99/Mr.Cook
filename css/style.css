@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,400i');
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+
+@import url('/css/reset.css');
+
+@import url('/css/typography.css');
+@import url('/css/icon-links.css');
+@import url('/css/navigation.css');
+@import url('/css/elements.css');
+
+
+@media screen and (min-width: 600px) {
+	body{
+		font-size:14px;
+	}
+} 
+@media screen and (min-width: 800px){
+    body{
+	    font-size:16px;
+    }
+} 
+    /*@media screen and (min-width: 1300px){
+        body{
+            font-size:21px;
+        }
+    } 
+    */
+/*
+    @media screen and (min-width: 1800px){
+        body{
+            font-size:23px;
+        }
+    }
+*/
+p{
+    margin:0;
+    padding:0;
+}
+
+body{margin:0; padding:0;}
+header .info {
+    background:rgb(99, 99, 99);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#FFF;
+    padding:0 1rem;
+    height:5vh;
+}
+
+header .fas,
+header span {
+    display:inline-block;
+}
+
+
+/* Site name section */
+
+header .appear {
+    background: rgb(255,255,255);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+header .appear  a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:680px) {
+ 
+    header .appear {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+
+
+}
+
+
+@media screen and (max-width:390px) {
+ 
+    header .appear .site-branding {
+        text-align:center;
+    }
+    
+}
+
+
+header .appear {
+    padding:4rem  3.5rem;
+}
+
+header .appear a {
+    color:#000;
+    padding:0;
+    margin:0;
+}
+header .appear .site-title {
+    font-size:3rem;
+    color: #000;
+}
+header .appear .site-branding i {
+    font-size:3rem;
+    margin-right:1rem;
+}
+
+header .appear .site-descrp {
+    display:block;
+    margin:0;
+    padding:0;
+    text-align:right;
+    letter-spacing: 2px;
+}
+
+
+
+/* Banner section */
+
+section.banner{ 
+    overflow: hidden;
+    position: relative;
+    box-shadow: 2px 10px 30px -10px rgba(0,0,0,0.59);
+}
+
+section.banner:after{ 
+    display: block;
+    content:'';
+    padding-top: 25%;
+
+} 
+@media screen and (max-width:400px) {
+    section.banner:after{ 
+        padding-top: 40%;
+    
+    }
+}
+section.banner img {
+    display: block;
+    position: absolute;
+    top:50%;  left:0;
+    transform:translateY(-50%);
+    height: auto;
+    width: 100%;
+    
+}

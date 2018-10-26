@@ -1,0 +1,14 @@
+html {
+
+     font:12px/1.5 "Lato","Helvetica",sans-serif;
+}
+
+body, input, select, option, textarea ,table ,td ,th {
+
+    font:inherit;
+
+}
+
+h1 ,h2 ,h3 ,h4 ,h5 ,h6 {
+    font-family:"Open Sans";    
+}

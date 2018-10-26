@@ -1,0 +1,138 @@
+section .navigation{margin:0;}
+section nav {color:#FFF;}
+section nav a {color:#FFF; text-decoration: none; display:block;}
+section nav i{font-size:12px;}
+
+
+section .main ul {
+    background:rgb(34, 34, 34);
+}
+
+
+section .main > ul {
+    display:flex;
+}
+
+nav.main ul ul{
+    display:block;
+    margin:0;
+    background:rgb(34, 34, 34);;
+    flex:1 0 auto;
+}
+
+
+section .main li {
+    display: block;
+    list-style: none;
+    position:relative;
+    padding:1.5rem 2rem;
+} 
+
+section .main li:hover {
+    background:rgb(63, 63, 63);
+}
+
+section .main li:hover > ul {
+    display:block;
+    opacity:1;
+    pointer-events:inherit;
+    transform: translateY(0);
+    transition: 0.2s ease;
+}
+
+section .fas.fa-chevron-down{
+    margin-left:0.4rem;
+}
+section .fas.fa-search {
+    font-size:14px;
+    margin-right:1rem;
+}
+
+#toggle,
+#main-nav-toggle {
+    display:none;
+    
+}
+
+@media screen and (max-width:800px) {
+
+    section .main {display:none;}
+    section .main > ul {
+        display:block;
+        text-align: center;
+    }
+    section .main ul {
+        flex:1 0 auto;
+    }
+    section .main ul > li > ul  {
+        
+        padding-top:0.5rem;
+    }
+
+    section .main ul > li:not(:last-child) {
+        border-bottom:0.1rem solid rgb(168, 168, 168 );
+    }
+    
+    section .main .fas {
+        display:block;
+        margin-top:0.5rem;
+    }
+
+    section .fas.fa-search {
+        display:none;
+    }
+    
+    #toggle {
+        display:block;
+        text-align:center;
+        font-size:1.5rem;
+        margin-bottom:1rem;
+    }
+
+    #toggle .fa-times { display:none;}
+
+    #main-nav-toggle:checked + header nav.main{ 
+        display:block;
+        position: relative;
+        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+     
+
+    }
+
+    #main-nav-toggle:checked + header #toggle .fa-times {
+        display: inline-block;
+    }
+    
+    #main-nav-toggle:checked + header #toggle .fa-bars {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:800px) {
+    
+    section .main {
+        background:rgb(34, 34, 34);
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap:wrap;
+        
+    }
+    
+    nav.main ul ul{
+        opacity:0;
+        pointer-events: none;
+        position:absolute;
+        width:12.85rem;
+        transform: translateY(2rem);
+        transition: 0.2s ease;
+        z-index:10;
+    }
+
+    
+    nav.main > ul > li > ul  {
+        top:100%;
+        left:0;
+    }
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,400i');
+
 @import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
 
 @import url('/css/reset.css');
@@ -123,7 +123,9 @@ header .appear .site-descrp {
 section.banner{ 
     overflow: hidden;
     position: relative;
+    border-bottom:0.6rem solid rgb(134, 31, 31);
     box-shadow: 2px 10px 30px -10px rgba(0,0,0,0.59);
+    
 }
 
 section.banner:after{ 
@@ -146,4 +148,116 @@ section.banner img {
     height: auto;
     width: 100%;
     
+}
+
+section.banner .banner-header {
+    color:rgb(255, 255, 255);
+    position:absolute;
+    top:33%;
+    left:7%;
+    text-shadow: 2px 2px 20px rgb(0 , 0 ,0 , 1);
+    font-style:italic;
+    font-family:"Cardo";
+    font-size:3rem;
+
+}
+
+section.banner span  {
+    display: block;
+}
+
+
+
+/* ABOUT PAGE */
+
+
+section.about {
+    
+    background: rgb(65, 69, 86, 0.2);
+}
+section.about .wrapper{
+    display:flex;
+    justify-content: center;
+}
+section.about .info{
+    padding:5rem;
+  
+   flex-basis:50%;
+    border-right:1px solid #333;
+}
+
+section.about .photos {
+    display:flex;
+    flex-basis:50%;
+    padding:3rem;
+    justify-content: space-evenly;
+}
+section.about h2 {
+    text-align:center;
+    padding-top:2rem;
+}
+
+section.about p {
+    margin-top:1rem;
+}
+
+section.about blockquote p {
+    margin:0.3rem;
+}
+
+section.about header:after {
+    display: block;
+    margin:1rem auto 2rem auto;
+    width:5rem;
+    height:0.15rem;
+    content:'';
+    background: #333;;
+}
+
+
+section.about ul {
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    
+}
+
+section.about li {
+    list-style-type:none;
+    flex:0 0 45%;
+    text-align:center;
+    margin:1rem;
+    border:1px solid black;
+    padding:0.5rem;
+}
+
+section.about img {
+    max-width:90%;
+}
+
+/* MENU Page */
+
+section.menu {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5rem;
+}
+
+section.menu article {
+    height:60vh;
+    width:20vw;
+    margin:2rem 3rem;
+    box-shadow:0 0 1rem 0.1rem rgb(0, 0 ,0 , 0.5 );
+    border-radius:0.4rem;
+    background:rgb(201, 199, 199,0.5); text-align:center;
+    padding-top:3rem;
+
+}
+
+section.menu article a{
+    
+    text-decoration:none;
+    margin-top:2rem;
+    color: black;
 }

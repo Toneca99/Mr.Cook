@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,400i|Cardo:400,400i');
+
 html {
 
      font:12px/1.5 "Lato","Helvetica",sans-serif;
@@ -10,5 +12,19 @@ body, input, select, option, textarea ,table ,td ,th {
 }
 
 h1 ,h2 ,h3 ,h4 ,h5 ,h6 {
-    font-family:"Open Sans" , sans-serif;    
+    font-family:"Open Sans" , serif;    
+}
+
+
+blockquote{
+    font-style: italic;
+    padding:2rem 0 1rem 4rem;
+    text-align: right;
+    
+    
+    
+}
+
+blockquote .author {
+    text-align:right;
 }
